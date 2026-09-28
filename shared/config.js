@@ -36,7 +36,8 @@ export const FRAME_CONFIG = {
 export const SELECTORS = {
   SIDECAR: "#n-nQJJFq > div",
   TARGET_DOCKED: "#n-nQJJFq > div > div.container",
-  IFRAME: "div.iframe-wrapper > iframe",
+  // Find the animation by its URL, independent of StoryMaps' iframe wrappers.
+  IFRAME: '#n-nQJJFq iframe[src*="/frames_display/"]',
   MESSAGE_DIV: "#n-5GpYQB"
 };
 
