@@ -35,7 +35,8 @@ export const FRAME_CONFIG = {
 // CSS selectors (used in main controller)
 export const SELECTORS = {
   SIDECAR: "#n-nQJJFq > div",
-  TARGET_DOCKED: "#n-nQJJFq > div > div.container",
+  // Support legacy classes and CSS modules without depending on generated hashes.
+  TARGET_DOCKED: '#n-nQJJFq :is(.container, [class*="DockablePanel_container__"])',
   // Find the animation by its URL, independent of StoryMaps' iframe wrappers.
   IFRAME: '#n-nQJJFq iframe[src*="/frames_display/"]',
   MESSAGE_DIV: "#n-5GpYQB"

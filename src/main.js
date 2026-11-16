@@ -56,7 +56,7 @@ const setupDockingObserver = ()=>
 			const observer = new MutationObserver(
 				() => {
 					
-					const currentlyDocked = target.classList.contains('docked');
+					const currentlyDocked = target.matches('.docked, [class*="DockablePanel_docked__"]');
 
 					if (currentlyDocked && !isDocked) {
 
