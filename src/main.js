@@ -53,8 +53,7 @@ const setupDockingObserver = ()=>
 
       console.log("docking target found:", target);
 
-			const observer = new MutationObserver(
-				() => {
+			const updateDockingState = () => {
 					
 					const currentlyDocked = target.matches('.docked, [class*="DockablePanel_docked__"]');
 
@@ -75,10 +74,12 @@ const setupDockingObserver = ()=>
 					if (!currentlyDocked && isDocked) {
 						isDocked = false;
 					}
-				}
-			);
+				};
+
+			const observer = new MutationObserver(updateDockingState);
 
 			observer.observe(target, { attributes: true, attributeFilter: ['class'] });
+			updateDockingState();
 
 			console.log("Docking observer attached.");
 		}
