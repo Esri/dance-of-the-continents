@@ -5,3 +5,10 @@ body {
   background-color: #f9f9f9;
   color: #333;
 }
+
+
+#storymaps-root {
+  --sm-component-editor-body-color: #e6e6e6 !important;
+  --sm-component-editor-title-color: #e6e6e6 !important;
+  --sm-component-editor-blockquote-color: #34edff !important;
+}
