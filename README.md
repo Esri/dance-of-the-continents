@@ -6,7 +6,7 @@ Watch millions of years of Earth's geological history unfold through interactive
 
 This enhanced ArcGIS StoryMaps project embeds a story via script and harnesses the page scroll event to create an introductory scrolly animation sequence.
 
-<a href="https://leebock.github.io/dance-of-the-continents/" target="_blank">View it live</a>
+<a href="https://esri.github.io/dance-of-the-continents/" target="_blank">View it live</a>
 
 ## Features
 
@@ -18,7 +18,7 @@ This enhanced ArcGIS StoryMaps project embeds a story via script and harnesses t
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/leebock/dance-of-the-continents.git
+   git clone https://github.com/esri/dance-of-the-continents.git
    cd dance-of-the-continents
    ```
 
